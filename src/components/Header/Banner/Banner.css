@@ -1,0 +1,57 @@
+.bannerCaption{
+    /* height: 400px; */
+}
+.Caption{
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 85px;
+    padding-top: 17px;
+    padding-bottom: 33px;
+}
+.captionDetails{
+    color: #fff;
+    line-height: 28px;
+    opacity: 0.7;
+    padding-right: 42px;
+    padding-bottom: 55px;
+}
+.main-btn{
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #ffc600;
+    padding: 0 43px;
+    font-size: 15px;
+    line-height: 50px;
+    border-radius: 30px;
+    color: #222;
+    cursor: pointer;
+    z-index: 5;
+    font-family: "Poppins", sans-serif;
+    -webkit-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    background-color: #ffc600;
+    margin-right: 10px;
+}
+.main-btn.main-btn-2 {
+    background-color: #279e64;
+    color: #fff;
+    border-color: #279e64;
+}
+
+.main-btn.main-btn-2:hover {
+    background-color: #ffc600;
+    border-color: #ffc600;
+    color: #222;
+}
+.main-btn:hover {
+    background-color: #279e64;
+    color: #fff;
+    border-color: #279e64;
+}

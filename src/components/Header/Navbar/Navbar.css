@@ -1,0 +1,9 @@
+.navItem{
+    font-size: 18px;
+    font-weight: 500;
+    color: #13287d !important;
+    text-transform: capitalize;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}

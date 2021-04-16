@@ -1,0 +1,50 @@
+.testimonialHeading{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: "Poppins", sans-serif;
+    color: #13287d;
+}
+.ptext{
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #279e64;
+}
+.reviewCard{
+    background-color: #fff;
+    padding: 21px 34px;
+    margin-top: 46px;
+}
+.cardText{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #83868c;
+    margin: 0px;
+    font-family: "Heebo", sans-serif;
+}
+.cardDetails{
+    padding-top: 14px;
+    border-top: 2px solid #ddd;
+    margin-top: 17px;
+}
+.cardCaption{
+    margin-left: 20px !important;
+}
+.cardCaption h3{
+    color: #13287d;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.cardCaption h4{
+    color: #8e8080;
+    font-size: 16px;
+    margin-top: -7px;
+    padding: 0px;
+}
+.imageSize{
+    height: 56px;
+    width: 58px;
+    margin-bottom: 25px;
+}
