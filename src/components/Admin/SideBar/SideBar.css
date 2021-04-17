@@ -1,3 +1,18 @@
 .sidebar{
-    background-color: aquamarine;
+    background-color: #1B9CFC;
+    height: 100vh;
+}
+.sidebar li{
+    list-style: none;
+    padding: 5px 9px;
+    border-bottom: 1px solid #094613;
+}
+.textStyle{
+    text-decoration: none;
+    color: #ffffffbf;
+    /* font-weight: 500; */
+    font-size: 15px;
+}
+.sidebar li:hover{
+ background-color: cadetblue;
 }

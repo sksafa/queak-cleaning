@@ -1,11 +1,7 @@
-
+import React, { useState } from 'react';
 import SideBar from '../SideBar/SideBar';
-import React, { useContext, useState } from 'react';
-import { useForm } from "react-hook-form";
-import { UserContext } from '../../../App';
-import './AddService.css'
 
-const AddService = () => {
+const Review = () => {
     const [info, setInfo] = useState({});
     const [file, setFile] = useState(null);
     const handleBlur = e => {
@@ -26,9 +22,9 @@ const AddService = () => {
         formData.append('file', file);
         formData.append('name', info.name);
         formData.append('description', info.description);
-        formData.append('price', info.price);
+        formData.append('surname', info.surname);
 
-        fetch('http://localhost:5000/addService', {
+        fetch('http://localhost:5000/addReview', {
             method: 'POST',
             body: formData
         })
@@ -50,21 +46,21 @@ const AddService = () => {
                     </div>
 
                     <div className="col-md-9 col-sm-12">
-                        <h4 className="mb-3 mt-3 text-center">Add Service</h4>
+                        <h4 className="mb-3 mt-3">Create Review</h4>
 
                         <div className="rightSide">
                             <form onSubmit={handleSubmit}>
                                 <div className="form-group">
-                                    <label htmlFor="exampleInputEmail1">Service Name</label>
-                                    <input onBlur={handleBlur} type="text"className="form-control"  name="name" placeholder="Enter service name" />
+                                    <label htmlFor="exampleInputEmail1">Name</label>
+                                    <input onBlur={handleBlur} type="text" className="form-control" name="name" placeholder="Enter service name" />
                                 </div>
                                 <div className="form-group">
-                                    <label>Description</label>
+                                    <label>Comment</label>
                                     <input onBlur={handleBlur} type="text" className="form-control" name="description" placeholder="description" />
                                 </div>
                                 <div className="form-group">
-                                <label htmlFor="exampleInputPassword1">Price</label>
-                                    <input onBlur={handleBlur} type="text" className="form-control" name="price" placeholder="Price" />
+                                <label htmlFor="exampleInputPassword1">Surname</label>
+                                    <input onBlur={handleBlur} type="text" className="form-control" name="surname" placeholder="Surname" />
                                 </div>
 
                                 <div className="form-group">
@@ -82,4 +78,4 @@ const AddService = () => {
     );
 };
 
-export default AddService;
+export default Review;

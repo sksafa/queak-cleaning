@@ -7,7 +7,7 @@ const Admin = () => {
         <section>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-3 sidebar">
+                    <div className="col-md-2 sidebar">
                         <SideBar></SideBar>
                     </div>
                 </div>
