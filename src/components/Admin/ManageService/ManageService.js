@@ -6,7 +6,7 @@ const ManageService = () => {
 
     const [service, setService] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('https://secure-tor-31436.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setService(data))
     }, [service])
@@ -14,7 +14,7 @@ const ManageService = () => {
 
     const deleteService = (id) => {
 
-        fetch("http://localhost:5000/deleteService/" + id, {
+        fetch("https://secure-tor-31436.herokuapp.com/deleteService/" + id, {
             method: 'DELETE',
             // headers: { 'Content-Type': 'application/json' },
             // body: JSON.stringify(id)

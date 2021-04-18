@@ -6,7 +6,7 @@ const ViewOrder = () => {
 
     const [viewOrder, setViewOrder] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/bookingOrderList')
+        fetch('https://secure-tor-31436.herokuapp.com/bookingOrderList')
             .then(res => res.json())
             .then(data => setViewOrder(data))
     }, [viewOrder])
@@ -14,7 +14,7 @@ const ViewOrder = () => {
     const onGoing = (id) => {
         const status = 'ongoing';
         const updateInfo = { id, status }
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://secure-tor-31436.herokuapp.com/update/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updateInfo)
@@ -30,7 +30,7 @@ const ViewOrder = () => {
     const done = (id) => {
         const status = 'done';
         const updateInfo = { id, status }
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://secure-tor-31436.herokuapp.com/update/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updateInfo)
@@ -46,7 +46,7 @@ const ViewOrder = () => {
     const pending = (id) => {
         const status = 'pending';
         const updateInfo = { id, status }
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://secure-tor-31436.herokuapp.com/update/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updateInfo)

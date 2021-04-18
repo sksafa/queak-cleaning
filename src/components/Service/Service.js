@@ -6,7 +6,7 @@ import ServiceDetails from '../ServiceDetails/ServiceDetails';
 const Service = () => {
     const [service, setService] = useState([])
     useEffect( () => {
-        fetch('http://localhost:5000/service')
+        fetch('https://secure-tor-31436.herokuapp.com/service')
         .then(res => res.json())
         .then(data => setService(data))
     }, [])

@@ -41,7 +41,7 @@ const BookingInfo = ({info,orderDate}) => {
             paymentId,
             status:'pending'
         }
-        fetch('http://localhost:5000/bookingOrderList', {
+        fetch('https://secure-tor-31436.herokuapp.com/bookingOrderList', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(orderDetails)

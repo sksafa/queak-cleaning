@@ -22,7 +22,7 @@ const AddAdmin = () => {
         formData.append('file', file);
         formData.append('email', info.email);
 
-        fetch('http://localhost:5000/addAdmin', {
+        fetch('https://secure-tor-31436.herokuapp.com/addAdmin', {
             method: 'POST',
             body: formData
         })

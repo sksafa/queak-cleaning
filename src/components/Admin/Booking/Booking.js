@@ -18,7 +18,7 @@ const Booking = () => {
     const orderDate = value.toDateString();
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookingInfo/' + _id)
+        fetch('https://secure-tor-31436.herokuapp.com/bookingInfo/' + _id)
             .then(res => res.json())
             .then(data => setBookingInfo(data))
     }, [_id]);
