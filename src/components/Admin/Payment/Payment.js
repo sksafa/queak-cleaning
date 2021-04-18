@@ -9,7 +9,7 @@ const stripePromise = loadStripe('pk_test_X2jogsHYgJQNw8Mxn1iYXZyM001TvFWmtv');
 
 const Payment = ({handelPaymentSuccess}) => {
     return (
-        <Elements stripe={stripePromise}>
+        <Elements  stripe={stripePromise} >
            
              <SimpleCardForm handelPaymentSuccess={handelPaymentSuccess}></SimpleCardForm>  
         </Elements>

@@ -4,7 +4,8 @@ import "firebase/auth";
 import { UserContext } from '../../App'
 import firebaseConfig from './firebase.config';
 import { useHistory, useLocation } from 'react-router';
-import './Login.css'
+import './Login.css';
+import logo from '../../image/logo-2.png'
 
 const Login = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -33,17 +34,20 @@ const Login = () => {
             });
     }
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-12 col-sm-12">
-                    <div className="loginSection">
-                        <div className="buttonSection">
-                        <button className="loginButton" onClick={handelGoogleSignIn}>Google Sign In</button>
+        <section className="loginBody">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12 col-sm-12 flexbox">
+                        <div className="loginSection">
+                            <div className="buttonSection">
+                                <img src={logo} alt="" /><br/>
+                                <button className="loginButton" onClick={handelGoogleSignIn}>Google Sign In</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

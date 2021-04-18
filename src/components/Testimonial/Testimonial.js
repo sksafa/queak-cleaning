@@ -17,15 +17,16 @@ const Testimonial = () => {
 
     const style = {
         backgroundImage: ` url(${testimonial})`,
-        height: '700px',
+       // height: '700px',
         backgroundPosition: 'center center',
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        marginBottom:'100px'
     }
 
 
     return (
-        <section style={style} className="pt-5">
+        <section style={style} className="pt-5 testBody">
             <div className="container">
                 <p className="ptext">Some Feedback</p>
                 <h1 className="testimonialHeading">Happy Client Says About <br/> Our Company</h1>

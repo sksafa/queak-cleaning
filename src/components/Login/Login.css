@@ -1,14 +1,26 @@
 .loginSection{
-    display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 319px;
+    width: 56%;
+    background: #e01212;
+    /* margin: 0 auto; */
+    margin-top: 119px;
+    display: flex;
+    box-shadow: 2px 2px 6px 3px #750000;
+    border-radius: 7px;
+
+}
+.flexbox{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .loginButton{
     background: #209e00;
     color: #fff;
-    font-size: 30px;
-    padding: 4px 19px;
+    font-size: 24px;
+    padding: 4px 17px;
     font-weight: 500;
     border: 0px;
     border-radius: 5px;
@@ -16,4 +28,11 @@
 .loginButton:hover{
     background: #0a2703;
 
+}
+.loginBody{
+    background-color: crimson;
+    height: 100vh;
+}
+.loginBody img{
+    margin-bottom: 20px;
 }

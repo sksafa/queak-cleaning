@@ -50,7 +50,7 @@ const BookingInfo = ({info,orderDate}) => {
           .then(res => res.json())
           .then(data => {
             if (data) {
-              alert('your order succes')
+              alert('your order Confirm')
             }
           })
       }
@@ -89,8 +89,8 @@ const BookingInfo = ({info,orderDate}) => {
             </form>
             </div>
             </div>
-         <div style={{display:userInfo?'block':'none'}}>
-             <h2>Confirm Your Order With Payment</h2>
+         <div className=" mt-5" style={{display:userInfo?'block':'none'}}>
+             <h3>Confirm Your Order With Payment</h3>
              <Payment handelPaymentSuccess={handelPaymentSuccess}></Payment>
          </div>
         </div>

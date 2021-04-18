@@ -55,3 +55,27 @@
     color: #fff;
     border-color: #279e64;
 }
+
+@media screen and (max-width: 480px){
+    .Caption{
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+
+    }
+    .bannarImage{
+        height: 218px;
+        width: 266px;
+    }
+    .main-btn{
+        margin-bottom: 10px;
+        margin-left: 80px;
+    }
+    .captionDetails{
+        text-align: center;
+    }
+    .main-btn-2{
+       margin-left: 80px;
+    }
+
+}

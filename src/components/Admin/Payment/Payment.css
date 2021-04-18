@@ -1,0 +1,16 @@
+.paymentButton{
+    background-color: crimson;
+    margin-top: 12px;
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+    padding: 7px 32px;
+    border-radius: 4px;
+}
+
+.paymentFrom{
+    background-color: #fff;
+    padding: 12px 0px;
+    border: 2px solid #dc143c;
+    border-radius: 5px;
+}

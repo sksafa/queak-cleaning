@@ -13,7 +13,8 @@
 .reviewCard{
     background-color: #fff;
     padding: 21px 34px;
-    margin-top: 46px;
+    margin-top: 38px;
+    margin-bottom: 100px;
 }
 .cardText{
     font-size: 15px;
@@ -47,4 +48,19 @@
     height: 56px;
     width: 58px;
     margin-bottom: 25px;
+}
+.cardImage img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.testBody{
+    height: auto;
+}
+
+@media screen and (max-width: 480px){
+    .testimonialHeading{
+        font-size: 28px;
+        line-height: 31px;
+    }
 }

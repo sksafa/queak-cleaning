@@ -40,12 +40,12 @@ const AddAdmin = () => {
         <section>
         <div className="container-fluid">
             <div className="row">
-                <div className="col-md-3 sidebar">
+                <div className="col-md-2 sidebar">
                     <SideBar></SideBar>
                 </div>
 
                 <div className="col-md-9 col-sm-12">
-                    <h4 className="mb-3 mt-3">Add Admin</h4>
+                    <h4 className="mb-5 mt-3 text-center">Add Admin</h4>
 
                     <div className="rightSide">
                         <form onSubmit={handleSubmit}>

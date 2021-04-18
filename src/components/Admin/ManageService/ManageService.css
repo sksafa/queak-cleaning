@@ -2,6 +2,8 @@
     padding: 10px;
     box-shadow: 2px 2px 6px 2px #042e2e;
     border-radius: 5px;
+    width: 46%;
+    margin: 0 auto;
 }
 .deleteProduct table{}
 .deleteProduct table tr {

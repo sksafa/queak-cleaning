@@ -39,8 +39,8 @@ const ManageService = () => {
 
                     <div className="col-md-9 col-sm-12">
 
-                        <h4 className="mt-2">Service List</h4>
-                        <div className="deleteProduct mb-5">
+                        <h4 className="mt-2 text-center">Service List</h4>
+                        <div className="deleteProduct mt-5 mb-5">
                             <table>
                                 <tr>
                                     <td className="textBold"><p>Service Name</p></td>
